@@ -1,0 +1,11 @@
+article.article{
+    grid-template-areas: "side header header"
+    "side main main"
+    "side cont1 cont2"
+    "side cont3 cont3"
+    "footer footer footer"
+    ;
+    grid-template-columns: 30vw;
+    grid-template-rows: 100px 300px 100px 100px 100px;
+}
+

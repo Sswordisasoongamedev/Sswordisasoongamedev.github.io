@@ -1,0 +1,48 @@
+/*
+Import this one for article responsiveness
+*/
+/*in other words this one is: if width <= 500:
+    import phone_layout.css*/
+@import "phone.css" screen and (max-width:500px);
+/*if width <= 800 or width: import tablet_layout.css (our tablet layout)*/
+@import "tablet.css" screen and (min-width:500px) and (max-width:800px);
+/*if width <= 1920px: import desktop.css (our desktop article layout)*/
+@import "desktop.css" screen and (min-width:800px) and (max-width:1920px);
+/*sets every color to black when printing*/
+@import "print.css" print;
+@import "tts.css" speech;
+article.article{
+    display: grid;
+}
+.side{
+    grid-area: side;
+    
+}
+.cont1{
+    grid-area: cont1;
+}
+.cont2{
+    grid-area: cont2;
+}
+.cont3{
+    grid-area: cont3;
+}
+.main{
+    grid-area: main
+}
+.footer{
+    grid-area: footer;
+}
+.header{
+    grid-area: header;
+}
+.b-b{
+    border: 1px solid black;
+}
+.common-text{
+    font-size: 1vw;
+    word-wrap: break-word;
+}
+*{
+    word-wrap: break-word;
+}

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+[grid]{
+    display: grid;
+}
+[center]{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+[text-center="true"]{
+    text-align: center;
+    
+}
+
+[show]{
+    display: block;
+}
+[hidden]{
+    display: none;
+    opacity: 0;
+    scale: 0;
+}
+[anim-play='true']{
+    animation-play-state: running;
+}
+[anim-play='false']{
+    animation-play-state: paused;
+}
+[display=undefined]{
+    display: inherit;
+}
+
+[cards]{
+    gap: 8px;
+}
+@property --o{
+    syntax: '<col>';
+
+}
