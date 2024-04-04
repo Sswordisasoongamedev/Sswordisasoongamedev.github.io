@@ -1,0 +1,389 @@
+:root {
+    --main-bg-color-theme: linear-gradient(135deg, red, blue, green, yellow);
+    --headers-size-1: calc(3vw + 3vh);
+    --headers-size-2: calc(2vw + 2vh);
+    --a-clear-no-underline: none;
+    --article-text-section: rgb(0, 128, 0);
+    --side-image-position: absolute;
+    --side-image-left-60: 60vw;
+    --megalovania: "Comic Sans MS", cursive;
+    --animation-keyframes-rainbow: rainbow 1s ease 0.2 infinite alternate forwards none;
+    --documentary-article-flexbox: flexbox;
+    --royal-purple:#a0a
+}
+
+body {
+    /* Set initial linear background */
+    background: black;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    background-image: var(--main-bg-color-theme);
+    border: white solid;
+}
+
+a span {
+    font-weight: bolder;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header {
+    font-size: var(--headers-size-1);
+    font-family: var(--megalovania);
+}
+
+article, article {
+    color: var(--article-text-section);
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border: #feacae solid;
+}
+
+article h3, article h2 {
+    font-family: var(--megalovania);
+}
+
+.side-images {
+    position: absolute;
+    left: var(--side-image-left-60);
+}
+
+/* Heart styles */
+.heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+
+.heart:before, .heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+/* Blue heart */
+#blue.heart:before, #blue.heart:after {
+    background: blue;
+}
+
+/* Green heart */
+#green.heart:before, #green.heart:after {
+    background: green;
+}
+
+/* Purple heart */
+#purple.heart:before, #purple.heart:after {
+    background: purple;
+}
+
+/* Orange heart */
+#orange.heart:before, #orange.heart:after {
+    background: orange;
+}
+
+/* Yellow heart */
+#yellow.heart:before, #yellow.heart:after {
+    background: yellow;
+}
+
+/* Aqua heart */
+#aqua.heart:before, #aqua.heart:after {
+    background: aqua;
+}
+
+.priority {
+    opacity: 2;
+    z-index: 2;
+}
+
+@keyframes shrinkrayv2-0-9 {
+    0% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1.8);
+    }
+}
+
+/* Other shape styles (square, rectangle, circle, etc.) can be added here */
+.mystery{
+    animation-name: mystery;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes mystery{
+    25%{
+        background-image: url(../gaster.png);
+        transition: 1s;
+        opacity: 1;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50%{
+        background-image: url(../tobyfox-frameone.png);
+        transition: 1s;
+        opacity: 1s;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    75%{
+        background-image: url(../wingdings.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 1s;
+        opacity: 0.5;
+    }
+}
+
+.polaroid{
+    width: 20vw;
+    height: 30vh;
+    position: absolute;
+    top: 20vh;
+    border: solid 1px var(--royal-purple);
+    background: blue;
+    
+}
+.polaroid .child{
+    width: 15vw;
+    height: 20vh;
+
+}
+#p1{
+    left: 0vw;
+    transform: rotate(-90deg);
+    
+}
+#p2{
+    left: 20vw;
+    transform: rotate(-45deg);
+    
+}
+#p3{
+    left: 40vw;
+    transform: rotate(0deg);
+    
+}
+#p4{
+    left: 60vw;
+    transform: rotate(45deg);
+}
+#p5{
+    left: 80vw;
+    transform: rotate(90deg);
+}
+@keyframes change1{
+    0%{
+        background-image: url(../nostalgic1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    50%{
+        background-image: url(../rufo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    100%{
+        background-image: url(../rufo\ -hehehehehh.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+}
+@keyframes change2{
+    0%{
+        background-image: url(../mrs-ict.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        
+    }
+    50%{
+        background-image: url(../mr-ict.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        
+    }
+    100%{
+        background-image: url(../both.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        
+    }
+}
+@keyframes change3{
+    0%{
+        background-image: url(../mam-elvira.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    50%{
+        background-image: url(../sir-alexis.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    100%{
+        background-image: url(../siralexis.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+}
+@keyframes change4{
+    0%{
+        background-image: url(../img/430150245_1449321669317747_3665444649920613052_n.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    50%{
+        background-image: url(../sirlevi.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    100%{
+        background-image: url(../img/430234900_373321782325781_4540904638662982409_n.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+}
+@keyframes change5{
+    0%{
+        background-image: url(../img/430311035_794537746037493_4014941413736787876_n.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    50%{
+        background-image: url(../img/430368208_1640593863345223_4719162321352323445_n.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    100%{
+        background-image: url(../img/430711248_3711923475795792_2308390402477559223_n.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+}
+@keyframes change{
+    0%{
+        background-image: url();
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    50%{
+        background-image: url();
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    100%{
+        background-image: url();
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+}
+@keyframes change{
+    0%{
+        background-image: url();
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    50%{
+        background-image: url();
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    100%{
+        background-image: url();
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+}
+* {
+    overflow: hidden;
+}
+.a{
+    animation-name: change1; 
+    animation-duration:8s;animation-timing-function:  ease; animation-delay:  0;animation-iteration-count:  infinite; animation-direction: alternate;
+}
+.b{
+    animation-name: change2; 
+    animation-duration:8s;animation-timing-function:  ease; animation-delay:  0;animation-iteration-count:  infinite;animation-direction: alternate;
+}
+.c
+{
+    animation-name: change3; 
+    animation-duration:8s;animation-timing-function:  ease; animation-delay:  0;animation-iteration-count:  infinite;animation-direction: alternate;
+}
+.d{
+    animation-name: change4; 
+    animation-duration:8s;animation-timing-function:  ease; animation-delay:  0;animation-iteration-count:  infinite;animation-direction: alternate;
+}
+.e{
+    animation-name: change5; 
+    animation-duration:8s;animation-timing-function:  ease; animation-delay:  0;animation-iteration-count:  infinite;animation-direction: alternate;
+}
+.child{
+    width: 12vw;
+    height: 16vh ;
+}

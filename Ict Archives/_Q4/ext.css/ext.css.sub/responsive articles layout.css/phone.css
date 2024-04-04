@@ -1,0 +1,12 @@
+article.article{
+    grid-template-areas: "header"
+    "side"
+    "main"
+    "cont1"
+    "cont2"
+    "cont3"
+    "footer"
+    ;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100px 100px 300px 100px 100px 100px 100px;
+}

@@ -1,0 +1,22 @@
+{
+    "ict":{
+        "services of ict":[]
+        ,"the three courses of ict":
+        {
+            "programming":{
+                "languages":["Html","Css","Javascript"],
+                "Examples/outputs":"Content"
+            }
+            ,"Animation":{
+                "Key_concepts":["Concept","Concepts"],
+                "History":"Content",
+                "Examples/outputs":"Content"
+            },
+            "Css":{
+                "Key_concepts":["Concept","Concepts"],
+                "History":"Content"
+                ,"Examples/outputs":"Content"
+            }
+        }
+    }
+}
