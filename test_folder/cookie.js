@@ -1,3 +1,3 @@
 function cookies(){
-  document.cookie = "username = anonymous"
+  document.cookie = "username = anonymous";
 }
