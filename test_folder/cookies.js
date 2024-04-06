@@ -39,4 +39,3 @@ export function charsplit(str){
 
 
 
-export { charsplit, add_cookie, getCookieValue, substringsplit };
