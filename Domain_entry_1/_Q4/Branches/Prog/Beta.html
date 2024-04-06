@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A li'l trick i have in my sleeves</title>
     <script type="module">
-        import test from "../../../../test_folder/cookie.js";
-        document.getElementById("af").innerText = test()
+        import { test,aftest } from "../../../../test_folder/cookie.js";
+        function funx(){
+        document.getElementById("af").innerText = aftest()
+        }
     </script>
     
       
