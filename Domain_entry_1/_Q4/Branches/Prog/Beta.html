@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A li'l trick i have in my sleeves</title>
-    <script src="../../../../test_folder/cookie.js" type="module">
-    // i need to use a function called "test" from cookie.js
-    </script>
     <script type="module">
         import test from "../../../../test_folder/cookie.js";
         document.getElementById("af").innerText = test()
@@ -20,7 +17,7 @@
         <div class="text-greetings" id="af"></div>
     </div>
     <div class="test">
-        <button onclick="test()"></button>
+        <button onclick="test()">click me!</button>
     </div>
 </body>
 </html>
