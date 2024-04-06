@@ -1,4 +1,4 @@
-import { add_cookie, getCookieValue, substringsplit, charsplit } from "../../../../test_folder/cookies.js";
+import { add_cookie, getCookieValue, substringsplit, charsplit } from "./test_folder/cookies.js";
 
       
         // Now you can use the imported functions
