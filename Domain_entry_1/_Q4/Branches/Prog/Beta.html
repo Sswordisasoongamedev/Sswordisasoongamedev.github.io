@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A li'l trick i have in my sleeves</title>
     <script type="module">
-        import { test,aftest } from "../../../../test_folder/cookie.js";
+        import { aftest } from "../../../../test_folder/cookie.js";
+        
+        // Define the funx function in the global scope
         window.funx = function() {
             document.getElementById("af").innerText = aftest();
         };
-    </script>
-    
-      
 
+        // Add event listener to the button after DOM content is loaded
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('button').addEventListener('click', funx);
+        });
+    </script>
 </head>
 <body>
     <div class="greetings">
         <div class="text-greetings" id="af"></div>
     </div>
     <div class="test">
-        <button onclick="window.funx()">click me! to display ur username</button>
+        <button>click me! to display ur username</button>
     </div>
 </body>
 </html>
