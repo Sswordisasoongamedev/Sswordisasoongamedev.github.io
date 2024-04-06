@@ -35,9 +35,4 @@ function charsplit(str){
 
 
 
-module.exports ={
-    charsplit,
-    add_cookie,
-    getCookieValue,
-    substringsplit
-};
+export { charsplit, add_cookie, getCookieValue, substringsplit };
