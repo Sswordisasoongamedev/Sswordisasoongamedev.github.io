@@ -6,9 +6,9 @@
     <title>A li'l trick i have in my sleeves</title>
     <script type="module">
         import { test,aftest } from "../../../../test_folder/cookie.js";
-        function funx(){
-        document.getElementById("af").innerText = aftest()
-        }
+        window.funx = function() {
+            document.getElementById("af").innerText = aftest();
+        };
     </script>
     
       
