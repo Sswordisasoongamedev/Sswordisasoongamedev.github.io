@@ -6,7 +6,7 @@ export function add_cookie(cookie_key_value_pair){
      * parameters: >>> cookie_key_value_pair must be separated
      */
 }
-logger =console.log;
+export const logger =console.log;
 export function getCookieValue(cookieKey) {
     // Split the document.cookie string into an array of individual cookies
     var cookiesArray = document.cookie.split(';');

@@ -1,4 +1,4 @@
-import { add_cookie, getCookieValue, substringsplit, charsplit } from "./cookies.js";
+import { add_cookie, getCookieValue, substringsplit, charsplit, logger } from "./cookies.js";
 
       
         // Now you can use the imported functions
@@ -12,5 +12,5 @@ import { add_cookie, getCookieValue, substringsplit, charsplit } from "./cookies
           returned =getCookieValue("Username")
           return returned
         }
-
-export { test,aftest }
+        const logger = logger
+export { test,aftest,logger }
