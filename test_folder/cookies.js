@@ -1,9 +1,13 @@
 const cookies = document.cookie;
-function add_cookie(cookie_key_value_pair){
-    document.cookie = cookie_key_value_pair
+export function add_cookie(cookie_key_value_pair){
+    document.cookie = cookie_key_value_pair;
+    /**
+     * add a cookie 
+     * parameters: >>> cookie_key_value_pair must be separated
+     */
 }
 logger =console.log;
-function getCookieValue(cookieKey) {
+export function getCookieValue(cookieKey) {
     // Split the document.cookie string into an array of individual cookies
     var cookiesArray = document.cookie.split(';');
   
@@ -21,11 +25,11 @@ function getCookieValue(cookieKey) {
     // Return null if the cookie is not found
     return null;
 }
-function substringsplit(str){
+export function substringsplit(str){
     const str_splitted = str.split(" ")
     return str_splitted
 }
-function charsplit(str){
+export function charsplit(str){
     var char_splitted = [];
     for(let k = 0; k < str.length; k++){
         char_splitted.push(str[k]);
