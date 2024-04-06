@@ -1,4 +1,4 @@
-cookies = document.cookie;
+const cookies = document.cookie;
 function add_cookie(cookie_key_value_pair){
     document.cookie = cookie_key_value_pair
 }
