@@ -51,7 +51,8 @@ function charsplit(str){
 document.addEventListener('DOMContentLoaded', function() {
     if (document.getElementsByTagName('title')[0].textContent == "A li'l trick i have in my sleeves") {
         document.getElementById("btn-1").addEventListener("click", function() {
-            getCookieValue("Username");
+            const doc_ =getCookieValue("Username");
+            document.getElementById("af").innerText  = doc_
         });
     }
 });
