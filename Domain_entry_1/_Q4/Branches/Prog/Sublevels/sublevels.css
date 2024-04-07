@@ -14,3 +14,13 @@ body.alpha-gen{
 {
     color: antiquewhite;
 }
+.greetings{
+    z-index: 1;
+    margin: auto auto;
+    width: 30vw;
+    height: 15vh;
+
+}
+a{
+    text-decoration: none;
+}
