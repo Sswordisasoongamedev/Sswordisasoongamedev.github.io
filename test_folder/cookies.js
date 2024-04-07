@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById("btn-1").addEventListener("click", function() {
             const doc_ =getCookieValue("Username");
             document.getElementById("af").innerText  = doc_
+            console.log("this function got called id:1121")
         });
         
     }
@@ -67,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
             /**
              * @type {string}
              */
-            const username =document.getElementById("redirect-btn").value
+            const username =document.getElementById("mytrick").value
             add_cookie("Username="+username)
             window.location.href = "./Beta.html"
         }
