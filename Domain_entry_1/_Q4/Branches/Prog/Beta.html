@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A li'l trick i have in my sleeves</title>
-    <script type="module">
+    <!--<script type="module">
         import { aftest } from "../../../../test_folder/cookie.js";
-        
-        // Define the funx function in the global scope
-        const funx = function() {
-            
-            document.getElementById("af").innerText = aftest();
-        };
+        /**
+         * @returns {string|null}
+        */
+        const cookie = window.funx = function() {
+            aftest()
+        }
+    </script>-->
+    <script src="../../../../test_folder/cookies.js">
 
-        // Add event listener to the button after DOM content is loaded
-        window.addEventListener('DOMContentLoaded', () => {
-            document.querySelector('button').addEventListener('click', funx);
-        });
     </script>
 </head>
 <body>
@@ -24,7 +22,7 @@
         <div class="text-greetings" id="af"></div>
     </div>
     <div class="test">
-        <button>click me! to display ur username</button>
+        <button onclick="getCookieValue('Username')">click me! to display ur username</button>
     </div>
 </body>
 </html>

@@ -7,6 +7,11 @@ export function add_cookie(cookie_key_value_pair){
      */
 }
 export const logger =console.log;
+/**
+ * 
+ * @param {string} cookieKey 
+ * @returns {string}
+ */
 export function getCookieValue(cookieKey) {
     // Split the document.cookie string into an array of individual cookies
     var cookiesArray = document.cookie.split(';');

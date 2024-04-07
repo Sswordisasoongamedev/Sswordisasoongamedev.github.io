@@ -8,6 +8,10 @@ import { add_cookie, getCookieValue, substringsplit, charsplit, logger } from ".
             add_cookie("Username = Ssword(dev)")
 
         }
+        /**
+         * 
+         * @returns {string}
+         */
         function aftest(){
           returned =getCookieValue("Username")
           return returned
