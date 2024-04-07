@@ -57,6 +57,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const doc_ =getCookieValue("Username");
             document.getElementById("af").innerText  = doc_
         });
+        
+    }
+    if (document.getElementsByTagName('title')[0].textContent ==
+    "ICT - Programming")
+    {
         document.getElementById("redirect-btn").addEventListener("click",function()
         {
             /**
