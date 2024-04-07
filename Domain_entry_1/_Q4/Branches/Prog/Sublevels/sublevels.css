@@ -4,7 +4,7 @@
 }
 .alpha-text{
     font-family: Blackadder ITC,cursive,sans-serif;
-    font-size: 4vh;
+    font-size: calc(4vh + 4vw);
     color: beige;
 }
 body.alpha-gen{
@@ -12,15 +12,19 @@ body.alpha-gen{
 }
 *
 {
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
 }
 .greetings{
     z-index: 1;
     margin: auto auto;
     width: 30vw;
     height: 15vh;
-
 }
 a{
     text-decoration: none;
+}
+
+.center{
+    position: absolute;
+    margin: auto autos;
 }
