@@ -1,5 +1,8 @@
 const cookies = document.cookie;
-
+/**
+ * 
+ * @param {string} cookie_key_value_pair 
+ */
 function add_cookie(cookie_key_value_pair){
     document.cookie = cookie_key_value_pair;
     /**
@@ -54,5 +57,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const doc_ =getCookieValue("Username");
             document.getElementById("af").innerText  = doc_
         });
+        document.getElementById("redirect-btn").addEventListener("click",function()
+        {
+            /**
+             * @type {string}
+             */
+            const username =document.getElementById("redirect-btn").value
+            add_cookie("Username = "+username)
+            window.location.href = "https://sswordisasoongamedev.github.io/Domain_entry_1/_Q4/Branches/Prog/Beta.html"
+        }
+        )
     }
 });
