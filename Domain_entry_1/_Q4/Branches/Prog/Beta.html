@@ -8,7 +8,7 @@
         import { aftest } from "../../../../test_folder/cookie.js";
         
         // Define the funx function in the global scope
-        window.funx = function() {
+        const funx = function() {
             
             document.getElementById("af").innerText = aftest();
         };
