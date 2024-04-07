@@ -1,18 +1,22 @@
 const cookies = document.cookie;
-export function add_cookie(cookie_key_value_pair){
+
+function add_cookie(cookie_key_value_pair){
     document.cookie = cookie_key_value_pair;
     /**
      * add a cookie 
      * parameters: >>> cookie_key_value_pair must be separated
      */
 }
-export const logger =console.log;
+
+const logger = console.log;
+
 /**
+ * Retrieve the value of the specified cookie key.
  * 
- * @param {string} cookieKey 
- * @returns {string}
+ * @param {string} cookieKey - The key of the cookie to retrieve.
+ * @returns {string|null} The value of the cookie, or null if the cookie is not found.
  */
-export function getCookieValue(cookieKey) {
+function getCookieValue(cookieKey) {
     // Split the document.cookie string into an array of individual cookies
     var cookiesArray = document.cookie.split(';');
   
@@ -30,11 +34,13 @@ export function getCookieValue(cookieKey) {
     // Return null if the cookie is not found
     return null;
 }
-export function substringsplit(str){
+
+function substringsplit(str){
     const str_splitted = str.split(" ")
     return str_splitted
 }
-export function charsplit(str){
+
+function charsplit(str){
     var char_splitted = [];
     for(let k = 0; k < str.length; k++){
         char_splitted.push(str[k]);
@@ -42,5 +48,10 @@ export function charsplit(str){
     return char_splitted;
 }
 
-
-
+document.addEventListener('DOMContentLoaded', function() {
+    if (document.getElementsByTagName('title')[0].textContent == "A li'l trick i have in my sleeves") {
+        document.getElementById("btn-1").addEventListener("click", function() {
+            getCookieValue("Username");
+        });
+    }
+});
