@@ -4,7 +4,7 @@
 }
 .alpha-text{
     font-family: Blackadder ITC,cursive,sans-serif;
-    font-size: calc(4vh + 4vw);
+    font-size: 4vw;
     color: beige;
 }
 body.alpha-gen{
