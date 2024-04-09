@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="qeEMSBInVk1-URVU9mW2" name="Page-1">
-        <mxGraphModel dx="1959" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#000000" math="0" shadow="0">
+        <mxGraphModel dx="1101" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#000000" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -47,6 +47,9 @@
                 </mxCell>
                 <mxCell id="70" value="website is hosted to process data(pass data), to be shared with others who dont have a computer,to be viewed with other devices to see how this website truly looks on those other devices" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
                     <mxGeometry y="600" width="160" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#66FFB3;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="-380" y="240" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

@@ -28,3 +28,12 @@ a{
     position: absolute;
     margin: auto autos;
 }
+.btn1{
+    width: 5vh;
+    height: 5vh;
+    position: absolute;
+    color: #000000;
+    margin: 45vw 40%;
+    color-scheme: dark;
+    background-image: linear-gradient(135deg ,#000000,#fff);
+}
