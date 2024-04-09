@@ -1,0 +1,41 @@
+/*emulate html4 elements*/
+/* Emulate the <center> element */
+
+.center {
+    text-align: center;
+}
+
+/* Emulate the <font> element */
+.font {
+    font-family: Arial, sans-serif; /* Specify the desired font family */
+}
+
+/* Emulate the <big> element */
+.big {
+    font-size: larger; /* Increase the font size */
+}
+
+/* Emulate the <strike> element */
+.strike {
+    text-decoration: line-through; /* Add a line-through text decoration */
+}
+
+/* Emulate the <s> element */
+.s {
+    text-decoration: line-through; /* Add a line-through text decoration */
+}
+
+/* Emulate the <tt> element */
+.tt {
+    font-family: monospace; /* Use a monospace font */
+}
+
+/* Emulate the <u> element */
+.u {
+    text-decoration: underline; /* Add an underline text decoration */
+}
+
+/* Emulate the <nobr> element */
+.nobr {
+    white-space: nowrap; /* Prevent line breaks */
+}

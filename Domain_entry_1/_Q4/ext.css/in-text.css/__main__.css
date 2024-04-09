@@ -1,0 +1,37 @@
+/*
+in-text css are usually used with a <span> instead of a <div>
+*/
+.oversub{
+    font-size: 66%;
+    vertical-align: -100%;
+}
+.oversup{
+    font-size:66%;
+    vertical-align: 100%;
+}
+@keyframes rainbow_ {
+    0%{
+        color: red;
+    }
+    33%{
+        color: green;
+    }
+    66%{
+        color: blue;
+    }
+}
+.rainbow{
+    animation: rainbow_ 4s ease 0.1s infinite normal forwards;
+}
+
+.computer{
+    font-family: monospace;
+}
+.gray-quote{
+    color: gray;
+    font-style: italic;
+}
+.marked {
+    background-color: yellow;
+    color: black;
+}
