@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
              * @type {string}
              */
             const username =document.getElementById("mytrick").value
-            
+            Username=add_cookie("Username="+username)
             
             window.location.href = "./Beta.html"
         }
