@@ -37,3 +37,7 @@ a{
     color-scheme: dark;
     background-image: linear-gradient(135deg ,#000000,#fff);
 }
+.footer{
+    word-wrap:break-word
+    word-break:break-all
+}
