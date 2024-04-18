@@ -38,6 +38,12 @@ a{
     background-image: linear-gradient(135deg ,#000000,#fff);
 }
 .footer{
-    word-wrap:break-word
-    word-break:break-all
+    word-wrap:break-word;
+    word-break:break-all;
+}
+.scale{
+    font-size:2em !important;
+}
+.scale-big{
+    font-size:4em !important;
 }
