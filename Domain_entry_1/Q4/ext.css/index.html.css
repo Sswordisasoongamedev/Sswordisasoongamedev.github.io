@@ -54,7 +54,8 @@ body{
     color: white;
 }
 .new-nav{
-    position:fixed;
+    position: sticky;
+    z-index: 1;
     top:0vh;
     left:0vw !important; /*forces new-nav to left, not letting topnav class to overwrite*/
 }
