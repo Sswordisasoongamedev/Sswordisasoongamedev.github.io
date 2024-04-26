@@ -37,7 +37,7 @@ article.article{
     grid-area: header;
 }
 .b-b{
-    border: 1px thin black;
+    border: 1px solid black;
 }
 .common-text{
     font-size: 1vw;
