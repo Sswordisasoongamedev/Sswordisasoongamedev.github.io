@@ -44,15 +44,18 @@
 
         @keyframes fuck_around_and_find_out {
             0% {
-                transform: translateX(10%);
+                transform: translateX(10%) translateY(10%);
             }
 
             100% {
-                transform: translateX(-10%);
+                transform: translateX(-10%) translateY(-10%);
             }
         }
         
-    
+        .public-static-void-main{
+            position: relative;
+            overflow: hidden;
+        }
 
 
 
@@ -61,8 +64,9 @@
 <body class="alpha-gen" inverse="true">
     
     </div>
-
-    <div class="static-void" style="overflow: hidden !important /*override style*/;"></div>
+    <div class="public-static-void-main"></div>
+        <div class="static-void" style="overflow: hidden !important /*override style*/;"></div>
+    </div>
     <nav class="new-nav">
         <table>
             <thead class="topnav new-nav">
