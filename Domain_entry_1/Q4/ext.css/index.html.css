@@ -59,4 +59,5 @@ body{
     z-index: 1981; /*why not overkill the z index to make sure this always are on top*/
     top:0vh;
     left:0vw !important; /*forces new-nav to left, not letting topnav class to overwrite*/
+    width: 30vw !important; /*this is a fixed element*/
 }
