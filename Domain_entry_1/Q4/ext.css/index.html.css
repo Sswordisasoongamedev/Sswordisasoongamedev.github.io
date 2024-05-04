@@ -54,8 +54,9 @@ body{
     color: white;
 }
 .new-nav{
-    position: sticky;
-    z-index: 1;
+    background-color: #000000; /*no importanthere, can be modified based on the page design*/
+    position: sticky; /**so the nav is always and ALWAYS accessible**/
+    z-index: 1981; /*why not overkill the z index to make sure this always are on top*/
     top:0vh;
     left:0vw !important; /*forces new-nav to left, not letting topnav class to overwrite*/
 }
