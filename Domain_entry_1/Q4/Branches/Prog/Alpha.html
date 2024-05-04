@@ -67,16 +67,12 @@
 
 }
 .star{
-    animation: tesseract 3s linear 0 infinite both;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-name: tesseract;
 }
-@keyframes tesseract {
-        0%{
-            transform: skew(10% ,-10%) scale(1) translateX(10%) translateY(-21%) rotate3d(0deg);
-        }
-        100%{
-            transform: skew(-10% ,-10%) scale(200%) translateX(-10%) translateY(21%) rotate3d(360deg);
-        }
-    }
+
 .sword_decor_ancient_theme{
     position: sticky;
     width: 7vw;
@@ -87,22 +83,10 @@
     </style>
 </head>
 <body class="alpha-gen" inverse="true">
-    <div class="star">
-        <div class="starlayer1" style="width: 5vh; height: 5vh; transform: rotate(15deg); background: yellow; position: absolute;">
-            <div class="starlayer2 " style="width: 5vh; height: 5vh; transform: rotate(30deg);background: red !important; position:absolute">
-                <div class="starlayer3" style="width: 5vh; height: 5vh; transform: rotate(45deg)">
-                    <div class="starlayer4" style="width: 5vh; height: 5vh; transform: rotate(45deg)">
-                        <div class="starlayer5" style="width: 5vh; height: 5vh; transform: rotate(45deg)"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    
     </div>
-    <div class="sword_decor_ancient_theme">
-        &lt;&lt;&lt;&lt;|==
 
-    </div>
-    <div class="static-void"></div>
+    <div class="static-void" style="overflow: hidden !important /*override style*/;"></div>
     <nav class="new-nav">
         <table>
             <thead class="topnav new-nav">

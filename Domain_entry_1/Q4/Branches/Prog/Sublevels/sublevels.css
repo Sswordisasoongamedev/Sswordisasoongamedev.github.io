@@ -2,6 +2,9 @@
     --font-sublevel : "Blackadder ITC"
 
 }
+[text-color-inverse="true"]{
+    color: #fff !important;
+}
 .alpha-text{
     font-family: Blackadder ITC,cursive,sans-serif;
     font-size: 2.8vw;
@@ -10,6 +13,11 @@
 body.alpha-gen{
     background: linear-gradient(to right,#000000,#0008FF 70%);
 }
+body.alpha-gen[inverse="true"]{
+    background: linear-gradient(to right,#000000 50%, #ffffff 50%) !important; 
+    height: 100vh;
+}
+
 *
 {
     color: rgb(255, 255, 255);
