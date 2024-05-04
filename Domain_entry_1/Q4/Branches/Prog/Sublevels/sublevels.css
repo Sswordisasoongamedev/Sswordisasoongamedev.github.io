@@ -14,8 +14,8 @@ body.alpha-gen{
     background: linear-gradient(to right,#000000,#0008FF 70%);
 }
 body.alpha-gen[inverse="true"]{
-    background: linear-gradient(to right,#000000 50%, #ffffff 50%) !important; 
-    height: 100vh;
+    background: linear-gradient(to right,#000000 50%, #4f07b4 50%) !important; 
+    height: 140vh;
 }
 
 *
